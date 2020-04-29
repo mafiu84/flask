@@ -15,7 +15,7 @@ def about():
     data = []
     with open("data/company.json", "r") as json_data:
         data = json.load(json_data)
-    return render_template("about.html", page_title="About", Company = data)
+    return render_template("about.html", page_title="About", company_data = data)
 
 
 @app.route("/contact")
